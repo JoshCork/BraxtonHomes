@@ -174,9 +174,9 @@ export default function AboutUs() {
                 
                 {/* Contact Us Button */}
                 <div className="text-center mt-4">
-                  <Link
-                    href="/contact-us"
-                    className="inline-block px-6 py-3 font-semibold text-base transition-all border rounded hover:bg-white/40"
+                  <button
+                    onClick={openModal}
+                    className="inline-block px-6 py-3 font-semibold text-base transition-all border rounded hover:bg-white/40 cursor-pointer"
                     style={{
                       backgroundColor: 'rgba(255,255,255,.1)',
                       borderColor: '#6796bf',
@@ -185,7 +185,7 @@ export default function AboutUs() {
                     }}
                   >
                     Contact Us
-                  </Link>
+                  </button>
                 </div>
               </div>
               

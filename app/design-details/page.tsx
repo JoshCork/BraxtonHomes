@@ -141,11 +141,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Backyard */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/BACKYARD-SECTION-HEADER-IMAGE.webp)',
@@ -232,11 +232,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Architecture */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/section-header-architecture.webp)',
@@ -379,11 +379,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Man Cave */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/19-ManCave-1950x650-1.jpg)',
@@ -442,11 +442,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Kitchen */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Section-Image.webp)',
@@ -563,11 +563,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Indoor/Outdoor */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/Header-Image-IOE.webp)',
@@ -680,11 +680,11 @@ export default function SignatureDesign() {
         </section>
 
         {/* Section Header Image - Pools */}
-        <div style={{ position: 'relative', width: '100%', marginLeft: '-225px', left: '225px' }}>
+        <div className="w-full" style={{ position: 'relative', marginLeft: '0', left: '0' }}>
           <section 
-            className="px-0"
+            className="px-0 w-full"
             style={{
-              width: 'calc(100vw - 225px)',
+              width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
               backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/SECTION-HEADER-IMAGE-POOLS.webp)',
