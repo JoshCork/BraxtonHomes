@@ -16,6 +16,7 @@ export default function PortfolioGallery({ images, title, autoplayInterval = 700
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [failedImages, setFailedImages] = useState<Set<number>>(new Set());
 
   // Auto-play functionality
   useEffect(() => {
@@ -109,6 +110,22 @@ export default function PortfolioGallery({ images, title, autoplayInterval = 700
     }
   };
 
+  // Adjust currentIndex if it's pointing to a failed image
+  useEffect(() => {
+    if (failedImages.has(currentIndex) && images.length > 0) {
+      // Find the next valid image
+      let nextIndex = currentIndex;
+      let attempts = 0;
+      while (failedImages.has(nextIndex) && attempts < images.length) {
+        nextIndex = (nextIndex + 1) % images.length;
+        attempts++;
+      }
+      if (nextIndex !== currentIndex && !failedImages.has(nextIndex)) {
+        setCurrentIndex(nextIndex);
+      }
+    }
+  }, [failedImages, currentIndex, images.length]);
+  
   if (images.length === 0) {
     return (
       <div className="flex items-center justify-center h-screen">
@@ -134,14 +151,27 @@ export default function PortfolioGallery({ images, title, autoplayInterval = 700
                 index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
             >
-              <Image
-                src={image}
-                alt={`${title} - Image ${index + 1}`}
-                fill
-                className="object-contain cursor-pointer"
-                priority={index === 0}
-                onClick={() => openLightbox(image)}
-              />
+              {failedImages.has(index) ? (
+                <div className="flex items-center justify-center h-full bg-gray-800 text-white">
+                  <div className="text-center">
+                    <p className="text-lg mb-2">Image {index + 1} failed to load</p>
+                    <p className="text-sm text-gray-400 break-all px-4">{image}</p>
+                  </div>
+                </div>
+              ) : (
+                <Image
+                  src={image}
+                  alt={`${title} - Image ${index + 1}`}
+                  fill
+                  className="object-contain cursor-pointer"
+                  priority={index === 0}
+                  onClick={() => openLightbox(image)}
+                  onError={() => {
+                    console.error(`Failed to load image ${index + 1}: ${image}`);
+                    setFailedImages(prev => new Set(prev).add(index));
+                  }}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -214,6 +244,10 @@ export default function PortfolioGallery({ images, title, autoplayInterval = 700
                   alt={`Thumbnail ${index + 1}`}
                   fill
                   className="object-cover"
+                  onError={() => {
+                    console.error(`Failed to load thumbnail ${index + 1}: ${image}`);
+                    setFailedImages(prev => new Set(prev).add(index));
+                  }}
                 />
               </button>
             ))}

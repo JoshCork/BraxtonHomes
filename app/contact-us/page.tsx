@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ContactUs() {
@@ -48,126 +49,175 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen">
-      <div className="max-w-4xl mx-auto py-12 px-6 md:px-12">
-        <div className="mb-8">
-          <Link href="/" className="hover:underline" style={{ color: '#4A6895' }}>
-            Braxton Home
-          </Link>
-        </div>
-
-        <h1 className="text-3xl md:text-4xl font-bold mb-8">Contact Us</h1>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Contact Form */}
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Name <span className="text-red-500">(required)</span>
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    <div id="main" className="clearfix w-full bg-white" style={{ position: 'relative', zIndex: 3 }}>
+      {/* Top Section - Two Column Layout */}
+      <div className="w-full bg-white" style={{ paddingTop: '60px', paddingBottom: '80px' }}>
+        <div className="max-w-[1200px] mx-auto px-8 md:px-12 lg:px-20">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-20">
+            {/* Left Column - Logo and Contact Info */}
+            <div className="w-full md:w-[48%] md:mr-[4%] bg-white">
+              <div className="text-center mb-10">
+                <Image
+                  src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON.png?fit=3327%2C954&ssl=1"
+                  alt="Braxton Custom Homes"
+                  width={600}
+                  height={172}
+                  className="mx-auto"
+                  style={{ maxWidth: '100%', height: 'auto' }}
                 />
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Email <span className="text-red-500">(required)</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              {submitStatus === 'success' && (
-                <div className="p-4 bg-green-100 text-green-700 rounded-md">
-                  Thank you! Your message has been sent successfully.
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="p-4 bg-red-100 text-red-700 rounded-md">
-                  There was an error sending your message. Please try again.
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ backgroundColor: '#4A6895' }}
-              >
-                {isSubmitting ? 'Sending...' : 'Send'}
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-              <p className="text-gray-700 mb-4">
-                Fill out the form and our team will be in touch with you promptly. Thank you for your interest!
-              </p>
-              <div className="space-y-2 text-gray-700">
-                <p>
-                  <strong>Phone:</strong> 602.363.0048
-                </p>
-                <p>
-                  <strong>Email:</strong>{' '}
-                  <a href="mailto:crcork@braxtonhomesaz.com" className="hover:underline" style={{ color: '#4A6895' }}>
-                    crcork@braxtonhomesaz.com
-                  </a>
+              
+              <div className="w-full max-w-[200px] mx-auto my-8 border-t border-gray-300"></div>
+              
+              <h3 className="text-center text-lg leading-[1.33] mb-8" style={{ fontSize: '18px', lineHeight: '1.33', color: '#4A6895' }}>
+                We&apos;d love To Meet You In Person Or Via The Web!
+              </h3>
+              
+              <div className="w-full max-w-[200px] mx-auto my-6 border-t border-gray-300"></div>
+              
+              <div className="text-center space-y-4 text-gray-700">
+                <p className="leading-relaxed">Fill out the form and our team will be in touch with you promptly. Thank you for your interest!</p>
+                <p className="leading-relaxed">
+                  <strong>Main Office:</strong> 10821 E. Troon North Dr. Scottsdale, AZ 85262<br />
+                  <strong>Phone:</strong> 602.363.0048<br />
+                  <strong>Email:</strong> crcork@braxtonhomesaz.com
                 </p>
               </div>
             </div>
 
-            <div className="mt-6">
+            {/* Right Column - Contact Form */}
+            <div className="w-full md:w-[48%] bg-white">
+              <form onSubmit={handleSubmit} className="space-y-6 bg-white" style={{ backgroundColor: 'white' }}>
+                {/* Name and Email Row */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <p className="mb-2.5 text-gray-700 font-medium">Your Name <span className="text-red-500">(required)</span></p>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-braxton-blue-solid focus:border-braxton-blue-solid"
+                      style={{ backgroundColor: 'white' }}
+                    />
+                  </div>
+                  
+                  <div>
+                    <p className="mb-2.5 text-gray-700 font-medium">Your Email <span className="text-red-500">(required)</span></p>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-braxton-blue-solid focus:border-braxton-blue-solid"
+                      style={{ backgroundColor: 'white' }}
+                    />
+                  </div>
+                </div>
+
+                {/* Subject */}
+                <div>
+                  <p className="mb-2.5 text-gray-700 font-medium">Subject</p>
+                  <input
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-braxton-blue-solid focus:border-braxton-blue-solid"
+                    style={{ backgroundColor: 'white' }}
+                  />
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label className="block mb-2.5 text-gray-700 font-medium">
+                    Your Message<br />
+                    <textarea
+                      name="message"
+                      rows={10}
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-braxton-blue-solid focus:border-braxton-blue-solid mt-2 resize-y"
+                      style={{ backgroundColor: 'white' }}
+                    />
+                  </label>
+                </div>
+
+                {/* Submit Button */}
+                <div>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="text-white px-8 py-3 rounded hover:opacity-90 transition-opacity font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ backgroundColor: '#E8A825' }}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send'}
+                  </button>
+                </div>
+
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-100 text-green-700 rounded-md">
+                    Thank you! Your message has been sent successfully.
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-100 text-red-700 rounded-md">
+                    There was an error sending your message. Please try again.
+                  </div>
+                )}
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom CTA Section with Background Image */}
+      <div 
+        className="w-full relative overflow-hidden"
+        style={{
+          paddingTop: '100px',
+          paddingBottom: '100px',
+          backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/Bottom-of-Home-Page-contact-page3.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'left top',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: 'rgba(0, 47, 108, 0.73)',
+          backgroundBlendMode: 'overlay',
+        }}
+      >
+        <div className="max-w-full mx-auto px-4 md:px-8">
+          <div className="text-center mb-6">
+            <Image
+              src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON-WHITE-GOLD.png?fit=3327%2C954&ssl=1"
+              alt="Braxton Custom Homes"
+              width={600}
+              height={172}
+              className="mx-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+          
+          <div className="text-center">
+            <h1 className="text-[34px] leading-[1.41] mb-4 text-white" style={{ fontSize: '34px', lineHeight: '1.41' }}>
+              We Build From Concept To Completion
+            </h1>
+            <p className="text-lg mt-[-20px] mb-4 text-white" style={{ fontSize: '18px', marginTop: '-20px' }}>
+              Through Creative Ideas, Innovation & Quality
+            </p>
+            
+            <div className="w-full max-w-full mx-auto my-2 border-t border-white/30"></div>
+            
+            <div className="mt-4">
               <Link
                 href="/"
-                className="inline-block text-white px-8 py-3 rounded hover:opacity-90 transition-opacity font-semibold"
-                style={{ backgroundColor: '#4A6895' }}
+                className="inline-block text-white px-8 py-3 border border-white/60 rounded hover:bg-white/10 transition-all font-semibold"
+                style={{
+                  borderWidth: '1px',
+                }}
               >
                 Let&apos;s Get Started!
               </Link>
@@ -178,4 +228,3 @@ export default function ContactUs() {
     </div>
   );
 }
-

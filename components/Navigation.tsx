@@ -61,9 +61,13 @@ export default function Navigation() {
 
   return (
     <nav className="flex-1" aria-label="Main Menu">
-      <ul className="space-y-1">
-        {navItems.map((item) => (
+      <ul className="space-y-0">
+        {navItems.map((item, index) => (
           <li key={item.href}>
+            {/* Separator line between menu items */}
+            {index > 0 && (
+              <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+            )}
             {item.children ? (
               <div className="space-y-1">
                 <div className="flex items-center">
@@ -95,9 +99,13 @@ export default function Navigation() {
                   </button>
                 </div>
                 {expandedItems.has(item.label) && (
-                  <ul className="ml-4 space-y-1">
-                    {item.children.map((child) => (
+                  <ul className="ml-4 space-y-0">
+                    {item.children.map((child, childIndex) => (
                       <li key={child.href}>
+                        {/* Separator line between submenu items */}
+                        {childIndex > 0 && (
+                          <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+                        )}
                         <Link
                           href={child.href}
                           className={`block px-4 py-2 text-gray-600 hover:bg-[#E8A825]/20 rounded relative ${
@@ -133,6 +141,21 @@ export default function Navigation() {
           </li>
         ))}
       </ul>
+      
+      {/* Separator line above contact info */}
+      <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+
+      {/* Contact Info - Right below Contact Us, aligned with menu items */}
+      <div className="space-y-2" style={{ fontSize: '13px', lineHeight: '1.5', paddingLeft: '16px', paddingRight: '16px', paddingTop: '8px' }}>
+        <p className="text-gray-700" style={{ color: '#4A6895' }}>602.363.0048</p>
+        <Link 
+          href="mailto:crcork@braxtonhomesaz.com" 
+          className="hover:opacity-80 block"
+          style={{ color: '#4A6895' }}
+        >
+          crcork@braxtonhomesaz.com
+        </Link>
+      </div>
     </nav>
   );
 }

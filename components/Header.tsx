@@ -15,9 +15,9 @@ export default function Header() {
             <Image
               src="/images/logo/braxton-logo-sm.png"
               alt="Braxton Custom Homes Logo"
-              width={150}
-              height={43}
-              style={{ maxHeight: '86px', height: 'auto', width: 'auto', maxWidth: '100%' }}
+              width={200}
+              height={57}
+              style={{ width: '200px', height: 'auto' }}
               priority
             />
           </Link>
@@ -25,18 +25,6 @@ export default function Header() {
 
         {/* Navigation */}
         <Navigation />
-
-        {/* Contact Info */}
-        <div className="mt-auto pt-8 space-y-2" style={{ fontSize: '13px', lineHeight: '1.5' }}>
-          <p className="text-gray-700" style={{ color: '#4A6895' }}>602.363.0048</p>
-          <Link 
-            href="mailto:crcork@braxtonhomesaz.com" 
-            className="hover:opacity-80"
-            style={{ color: '#4A6895' }}
-          >
-            crcork@braxtonhomesaz.com
-          </Link>
-        </div>
       </div>
     </aside>
   );

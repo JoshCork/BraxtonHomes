@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import FlipBox from '@/components/FlipBox';
+import { useContactModal } from '@/contexts/ContactModalContext';
 
 export default function AboutUs() {
+  const { openModal } = useContactModal();
   return (
     <main id="main" className="clearfix w-full bg-white" style={{ position: 'relative', zIndex: 3 }}>
       <div className="w-full bg-white">
@@ -16,7 +20,15 @@ export default function AboutUs() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* Dark gradient overlay for better text contrast */}
+            <div 
+              className="absolute inset-0"
+              style={{
+                background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
+                zIndex: 1,
+              }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center z-10">
               <div className="text-center text-white">
                 <h2 
                   className="mb-0"
@@ -25,7 +37,9 @@ export default function AboutUs() {
                     lineHeight: '1.2',
                     fontWeight: 'normal',
                     margin: '0px',
-                    color: '#ffffff'
+                    color: '#ffffff',
+                    textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)',
+                    letterSpacing: '2px',
                   }}
                 >
                   Braxton Homes
@@ -284,9 +298,9 @@ export default function AboutUs() {
             
             {/* Button */}
             <div className="mt-4">
-              <Link
-                href="/contact-us"
-                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white"
+              <button
+                onClick={openModal}
+                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white cursor-pointer"
                 style={{
                   borderColor: 'rgba(255,255,255,.6)',
                   borderWidth: '1px',
@@ -294,7 +308,7 @@ export default function AboutUs() {
                 }}
               >
                 Let&apos;s Get Started!
-              </Link>
+              </button>
             </div>
           </div>
         </section>

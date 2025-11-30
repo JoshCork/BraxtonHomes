@@ -2,8 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useContactModal } from '@/contexts/ContactModalContext';
 
 export default function OurWork() {
+  const { openModal } = useContactModal();
   const projects = [
     {
       id: 'pinnacle-canyon',
@@ -45,6 +47,14 @@ export default function OurWork() {
               backgroundPosition: 'center',
             }}
           />
+          {/* Dark gradient overlay for better text contrast */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
+              zIndex: 1,
+            }}
+          />
           <div className="absolute inset-0 flex items-center justify-center z-10">
             <h2 
               className="text-white text-center"
@@ -53,6 +63,8 @@ export default function OurWork() {
                 lineHeight: '1.2',
                 fontWeight: 'normal',
                 margin: '0px',
+                textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)',
+                letterSpacing: '2px',
               }}
             >
               Projects
@@ -99,22 +111,36 @@ export default function OurWork() {
                         />
                         
                         {/* Hover Overlay */}
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center pointer-events-none">
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all duration-300 flex items-center justify-center pointer-events-none">
                           <div className="text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             {project.hasGallery && (
                               <>
-                                <div className="block mb-2 text-white" style={{ fontSize: '15px', lineHeight: '1.33' }}>
+                                <div 
+                                  className="project-hover-gallery"
+                                  style={{
+                                    fontSize: '42px',
+                                    color: 'white',
+                                    fontWeight: '700',
+                                    textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                                    letterSpacing: '2px',
+                                    lineHeight: '1.2',
+                                    marginBottom: '1rem'
+                                  }}
+                                >
                                   Gallery
                                 </div>
-                                <div className="w-12 h-px bg-white mx-auto mb-2"></div>
+                                <div className="w-20 h-1 bg-white mx-auto mb-4" style={{ opacity: 0.95 }}></div>
                               </>
                             )}
                             <h4 
-                              className="text-white"
+                              className="project-hover-title"
                               style={{
-                                fontSize: '15px',
-                                lineHeight: '1.33',
-                                fontWeight: 'normal',
+                                fontSize: '48px',
+                                color: 'white',
+                                fontWeight: '700',
+                                textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                                letterSpacing: '2px',
+                                lineHeight: '1.2',
                                 margin: '0'
                               }}
                             >
@@ -141,18 +167,17 @@ export default function OurWork() {
           }}
         >
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="flex items-center gap-4">
               {/* Left column - separator */}
-              <div className="hidden md:block">
-                <div className="border-t" style={{ marginTop: '43px', borderColor: 'rgba(0,0,0,0.4)', borderTopWidth: '1px', height: '20px' }}></div>
+              <div className="hidden md:block flex-1 flex items-center">
+                <div className="w-full border-t" style={{ borderColor: 'rgba(0,0,0,0.4)', borderTopWidth: '1px' }}></div>
               </div>
               
               {/* Center column - button */}
-              <div className="text-center">
-                <div className="border-t" style={{ marginTop: '14px', marginBottom: '0px' }}></div>
+              <div className="flex-shrink-0">
                 <Link
                   href="/contact-us"
-                  className="inline-block border text-black px-8 py-3 font-semibold text-lg transition-all hover:bg-black/10 hover:border-black/60 mt-4"
+                  className="inline-block border text-black px-8 py-3 font-semibold text-lg transition-all hover:bg-black/10 hover:border-black/60"
                   style={{
                     borderColor: 'rgba(0,0,0,0.6)',
                     borderWidth: '1px',
@@ -164,8 +189,8 @@ export default function OurWork() {
               </div>
               
               {/* Right column - separator */}
-              <div className="hidden md:block">
-                <div className="border-t" style={{ marginTop: '43px', borderColor: 'rgba(0,0,0,0.4)', borderTopWidth: '1px', height: '20px' }}></div>
+              <div className="hidden md:block flex-1 flex items-center">
+                <div className="w-full border-t" style={{ borderColor: 'rgba(0,0,0,0.4)', borderTopWidth: '1px' }}></div>
               </div>
             </div>
           </div>
@@ -231,9 +256,9 @@ export default function OurWork() {
 
             {/* Button */}
             <div className="mt-4">
-              <Link
-                href="/contact-us"
-                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white"
+              <button
+                onClick={openModal}
+                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white cursor-pointer"
                 style={{
                   borderColor: 'rgba(255,255,255,.6)',
                   borderWidth: '1px',
@@ -241,7 +266,7 @@ export default function OurWork() {
                 }}
               >
                 Let&apos;s Get Started!
-              </Link>
+              </button>
             </div>
           </div>
         </section>

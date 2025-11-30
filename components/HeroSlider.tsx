@@ -56,6 +56,17 @@ export default function HeroSlider() {
         ))}
       </div>
 
+      {/* Dark gradient overlay for better text contrast - only on first slide */}
+      {currentSlide === 0 && (
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
+            zIndex: 15,
+          }}
+        />
+      )}
+
       {/* Overlay with text - only show on first slide */}
       {currentSlide === 0 && (
         <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -68,7 +79,9 @@ export default function HeroSlider() {
                 fontFamily: 'serif',
                 fontWeight: 'normal',
                 margin: '0px',
-                color: '#fff'
+                color: '#fff',
+                textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)',
+                letterSpacing: '2px',
               }}
             >
               Braxton Builders
@@ -80,7 +93,8 @@ export default function HeroSlider() {
                 lineHeight: '1.2',
                 fontWeight: 'normal',
                 margin: '0px',
-                color: '#fff'
+                color: '#fff',
+                textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)',
               }}
             >
               Welcome Home

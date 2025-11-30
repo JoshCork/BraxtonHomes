@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroSlider from '@/components/HeroSlider';
+import { useContactModal } from '@/contexts/ContactModalContext';
 
 export default function Home() {
+  const { openModal } = useContactModal();
   return (
     <main id="main" className="clearfix w-full">
       <div className="max-w-full">
@@ -102,8 +106,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Pinnacle Canyon
                   </h4>
                 </div>
@@ -128,8 +143,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Sonoran Reserve
                   </h4>
                 </div>
@@ -154,8 +180,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Talus
                   </h4>
                 </div>
@@ -189,8 +226,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Pinnacle Canyon
                   </h4>
                 </div>
@@ -215,8 +263,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Sonoran Reserve
                   </h4>
                 </div>
@@ -241,8 +300,19 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <h4 className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-[15px] leading-[1.33]">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
+                  <h4 
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    style={{
+                      fontSize: '48px',
+                      color: 'white',
+                      fontWeight: '700',
+                      textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
+                      letterSpacing: '2px',
+                      lineHeight: '1.2',
+                      margin: '0'
+                    }}
+                  >
                     Talus
                   </h4>
                 </div>
@@ -290,7 +360,7 @@ export default function Home() {
               </div>
               <blockquote className="text-white text-lg md:text-xl leading-relaxed mb-6">
                 <p>
-                  Now that we have a chance to live in our home for a couple of months, we thank you for being our contractor…every day we remind ourselves how fortunate we are to be here. Thanks again for your help through the process of building our home…<Link href="#" className="text-white underline">read more</Link>
+                  Now that we have a chance to live in our home for a couple of months, we thank you for being our contractor…every day we remind ourselves how fortunate we are to be here. Thanks again for your help through the process of building our home…<Link href="/testimonial" className="text-white underline">read more</Link>
                 </p>
               </blockquote>
               <div className="text-white">
@@ -342,29 +412,23 @@ export default function Home() {
           backgroundImage: 'url(/images/backgrounds/bkgd-lines.jpg)'
         }}>
           <div className="max-w-6xl mx-auto px-6 md:px-12">
-            <div className="grid md:grid-cols-12 gap-4">
+            <div className="flex items-center gap-4">
               {/* Left column - separator */}
-              <div className="md:col-span-4">
-                <div className="mt-[43px]">
-                  <div className="border-t border-black/40 h-[20px]"></div>
-                </div>
+              <div className="flex-1 flex items-center">
+                <div className="w-full border-t border-black/40"></div>
               </div>
               {/* Middle column - button */}
-              <div className="md:col-span-4">
-                <div className="mt-[14px] text-center">
-                  <Link
-                    href="/contact-us"
-                    className="inline-block border border-black/60 text-black px-8 py-3 hover:bg-gray-100 transition-colors font-semibold text-lg"
-                  >
-                    Your Dream Home Awaits
-                  </Link>
-                </div>
+              <div className="flex-shrink-0">
+                <Link
+                  href="/contact-us"
+                  className="inline-block border border-black/60 text-black px-8 py-3 hover:bg-gray-100 transition-colors font-semibold text-lg"
+                >
+                  Your Dream Home Awaits
+                </Link>
               </div>
               {/* Right column - separator */}
-              <div className="md:col-span-4">
-                <div className="mt-[43px]">
-                  <div className="border-t border-black/40 h-[20px]"></div>
-                </div>
+              <div className="flex-1 flex items-center">
+                <div className="w-full border-t border-black/40"></div>
               </div>
             </div>
           </div>
@@ -444,9 +508,9 @@ export default function Home() {
             
             {/* Button */}
             <div className="mt-4">
-              <Link
-                href="/contact-us"
-                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white"
+              <button
+                onClick={openModal}
+                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white cursor-pointer"
                 style={{
                   borderColor: 'rgba(255,255,255,.6)',
                   borderWidth: '1px',
@@ -454,7 +518,7 @@ export default function Home() {
                 }}
               >
                 Let&apos;s Get Started!
-              </Link>
+              </button>
             </div>
           </div>
         </section>

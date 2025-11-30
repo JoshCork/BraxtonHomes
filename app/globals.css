@@ -59,3 +59,37 @@ body {
   justify-content: center;
   overflow: visible;
 }
+
+/* Project hover text styles - High specificity to override Tailwind */
+.group:hover .project-hover-gallery,
+.project-hover-gallery {
+  display: block !important;
+  margin-bottom: 1rem !important;
+  color: white !important;
+  font-size: 42px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6) !important;
+  letter-spacing: 2px !important;
+}
+
+.group:hover .project-hover-title,
+.project-hover-title {
+  color: white !important;
+  font-size: 48px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6) !important;
+  letter-spacing: 2px !important;
+}
+
+/* Override any Tailwind text size utilities */
+.project-hover-title.text-\[15px\],
+.project-hover-gallery.text-\[15px\] {
+  font-size: 48px !important;
+}
+
+.project-hover-gallery.text-\[15px\] {
+  font-size: 42px !important;
+}

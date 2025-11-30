@@ -4,8 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Lightbox from '@/components/Lightbox';
+import { useContactModal } from '@/contexts/ContactModalContext';
 
 export default function SignatureDesign() {
+  const { openModal } = useContactModal();
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
   const openLightbox = (src: string, alt: string) => {
@@ -30,7 +32,15 @@ export default function SignatureDesign() {
             zIndex: 1
           }}
         >
-          <div className="relative max-w-full mx-auto px-6 md:px-12">
+          {/* Dark gradient overlay for better text contrast */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
+              zIndex: 1,
+            }}
+          />
+          <div className="relative max-w-full mx-auto px-6 md:px-12" style={{ zIndex: 10 }}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div className="md:w-[48%]">
@@ -41,7 +51,9 @@ export default function SignatureDesign() {
                     lineHeight: '1.41',
                     fontWeight: 'normal',
                     margin: '0',
-                    color: '#ffffff'
+                    color: '#ffffff',
+                    textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)',
+                    letterSpacing: '2px',
                   }}
                 >
                   SIGNATURE DESIGN
@@ -54,9 +66,9 @@ export default function SignatureDesign() {
                 
                 {/* Contact Us Button */}
                 <div className="mt-4">
-        <Link
-                    href="/contact-us"
-                    className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white"
+                  <button
+                    onClick={openModal}
+                    className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white cursor-pointer"
                     style={{
                       borderColor: '#ffffff',
                       borderWidth: '1px',
@@ -64,7 +76,7 @@ export default function SignatureDesign() {
                     }}
                   >
                     CONTACT US
-                  </Link>
+                  </button>
                 </div>
               </div>
               
@@ -816,9 +828,9 @@ export default function SignatureDesign() {
             
             {/* Button */}
             <div className="mt-4">
-              <Link
-                href="/contact-us"
-                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white"
+              <button
+                onClick={openModal}
+                className="inline-block border text-white px-8 py-3 font-semibold text-lg transition-all hover:bg-white/10 hover:border-white cursor-pointer"
                 style={{
                   borderColor: 'rgba(255,255,255,.6)',
                   borderWidth: '1px',
@@ -826,9 +838,9 @@ export default function SignatureDesign() {
                 }}
               >
                 Let&apos;s Get Started!
-        </Link>
-      </div>
-    </div>
+              </button>
+            </div>
+          </div>
         </section>
       </div>
 
