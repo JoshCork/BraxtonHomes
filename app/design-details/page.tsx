@@ -25,7 +25,7 @@ export default function SignatureDesign() {
         <section 
           className="relative w-full py-[130px] px-0 overflow-hidden"
           style={{
-            backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/26-HERO.jpg)',
+            backgroundImage: 'url(/images/hero/26-HERO.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'right center',
             position: 'relative',
@@ -110,11 +110,11 @@ export default function SignatureDesign() {
               {/* Left Image - 3/5 width (58.4%) */}
               <div 
                 className="w-full md:w-[58.4%] bg-[#f8f8f8] p-4 rounded overflow-hidden group cursor-pointer"
-                onClick={() => openLightbox('https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/26-leftview-1366x880.jpg', 'Bathroom design')}
+                onClick={() => openLightbox('/images/design-details/26-leftview-1366x880.jpg', 'Bathroom design')}
               >
                 <div className="relative w-full" style={{ aspectRatio: '1366/880' }}>
                   <Image
-                    src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/26-leftview-1366x880.jpg"
+                    src="/images/design-details/26-leftview-1366x880.jpg"
                     alt="Bathroom design"
                     fill
                     className="object-cover rounded transition-transform duration-300 group-hover:scale-110"
@@ -125,11 +125,11 @@ export default function SignatureDesign() {
               {/* Right Image - 2/5 width (37.6%) */}
               <div 
                 className="w-full md:w-[37.6%] bg-[#f8f8f8] p-4 rounded overflow-hidden group cursor-pointer"
-                onClick={() => openLightbox('https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/27-square-750x750.jpg', 'Bathroom design detail')}
+                onClick={() => openLightbox('/images/design-details/27-square-750x750.jpg', 'Bathroom design detail')}
               >
                 <div className="relative w-full" style={{ aspectRatio: '1/1' }}>
                   <Image
-                    src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/27-square-750x750.jpg"
+                    src="/images/design-details/27-square-750x750.jpg"
                     alt="Bathroom design detail"
                     fill
                     className="object-cover rounded transition-transform duration-300 group-hover:scale-110"
@@ -148,7 +148,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/BACKYARD-SECTION-HEADER-IMAGE.webp)',
+              backgroundImage: 'url(/images/section-headers/BACKYARD-SECTION-HEADER-IMAGE.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -182,11 +182,11 @@ export default function SignatureDesign() {
               {/* Left Image - 3/5 width (58.4%) */}
               <div 
                 className="w-full md:w-[58.4%] bg-[#f8f8f8] p-4 rounded overflow-hidden group cursor-pointer"
-                onClick={() => openLightbox('https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/36-pool-1366x880.jpg', 'Pool design')}
+                onClick={() => openLightbox('/images/design-details/36-pool-1366x880.jpg', 'Pool design')}
               >
                 <div className="relative w-full" style={{ aspectRatio: '1366/880' }}>
                   <Image
-                    src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/36-pool-1366x880.jpg"
+                    src="/images/design-details/36-pool-1366x880.jpg"
                     alt="Pool design"
                     fill
                     className="object-cover rounded transition-transform duration-300 group-hover:scale-110"
@@ -197,11 +197,11 @@ export default function SignatureDesign() {
               {/* Right Image - 2/5 width (37.6%) */}
               <div 
                 className="w-full md:w-[37.6%] bg-[#f8f8f8] p-4 rounded overflow-hidden group cursor-pointer"
-                onClick={() => openLightbox('https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/40-Pool-square-750x750.jpg', 'Pool design detail')}
+                onClick={() => openLightbox('/images/design-details/40-Pool-square-750x750.jpg', 'Pool design detail')}
               >
                 <div className="relative w-full" style={{ aspectRatio: '1/1' }}>
                   <Image
-                    src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/40-Pool-square-750x750.jpg"
+                    src="/images/design-details/40-Pool-square-750x750.jpg"
                     alt="Pool design detail"
                     fill
                     className="object-cover rounded transition-transform duration-300 group-hover:scale-110"
@@ -217,11 +217,11 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div 
               className="bg-[#f8f8f8] p-4 rounded overflow-hidden group cursor-pointer"
-              onClick={() => openLightbox('https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-7.webp', 'Luxury custom home backyard')}
+              onClick={() => openLightbox('/images/hero/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-7.webp', 'Luxury custom home backyard')}
             >
               <div className="relative w-full" style={{ aspectRatio: '2000/1300' }}>
                 <Image
-                    src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-7.webp"
+                    src="/images/hero/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-7.webp"
                   alt="Luxury custom home backyard"
                   fill
                   className="object-cover rounded transition-transform duration-300 group-hover:scale-110"
@@ -239,7 +239,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/section-header-architecture.webp)',
+              backgroundImage: 'url(/images/section-headers/section-header-architecture.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -272,10 +272,10 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics-architecture-1.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Braxton-Homes-Sonoran-Reserve-101-architecture-Home.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-DJI_0010-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-DJI_0008-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics-architecture-1.webp',
+                '/images/design-details/Braxton-Homes-Sonoran-Reserve-101-architecture-Home.webp',
+                '/images/hero/Architecture-DJI_0010-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Architecture-DJI_0008-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -301,8 +301,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-84.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-55.webp',
+                '/images/hero/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-84.webp',
+                '/images/hero/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-55.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -328,9 +328,9 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-35.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-2683-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-2669-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Architecture-Braxton-Homes-2023-Update-Slider-Pics-DJI-35.webp',
+                '/images/hero/Architecture-2683-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Architecture-2669-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -356,8 +356,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architecture-3A4A2792-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Architeture-2724-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Architecture-3A4A2792-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Architeture-2724-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -386,7 +386,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/19-ManCave-1950x650-1.jpg)',
+              backgroundImage: 'url(/images/section-headers/19-ManCave-1950x650-1.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -418,9 +418,9 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/mancave-pooltable-1366x880.jpg',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/mancave-kitchen-1366x880.jpg',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/mancave-entrance-1366x880.jpg',
+                '/images/design-details/mancave-pooltable-1366x880.jpg',
+                '/images/design-details/mancave-kitchen-1366x880.jpg',
+                '/images/design-details/mancave-entrance-1366x880.jpg',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -449,7 +449,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Section-Image.webp)',
+              backgroundImage: 'url(/images/design-details/Kitchen-Section-Image.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -482,10 +482,10 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-5X7A2475-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Prep-Kitchen-5X7A2552-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2569.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2584.webp',
+                '/images/hero/Kitchen-5X7A2475-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Prep-Kitchen-5X7A2552-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2569.webp',
+                '/images/hero/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2584.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -511,10 +511,10 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-5X7A2475-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Prep-Kitchen-5X7A2552-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2569.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2584.webp',
+                '/images/hero/Kitchen-5X7A2475-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Prep-Kitchen-5X7A2552-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2569.webp',
+                '/images/hero/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-2584.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -540,8 +540,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-5X7A2455-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-5X7A2586.webp',
+                '/images/hero/Kitchen-5X7A2455-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Kitchen-Braxton-Homes-2023-Update-Slider-Pics-5X7A2586.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -570,7 +570,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/Header-Image-IOE.webp)',
+              backgroundImage: 'url(/images/section-headers/Header-Image-IOE.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -603,8 +603,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-Braxton-Homes-2023-Update-Slider-Pics-DJI-77.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-3A4A2783-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Indoor_Outdoor-Braxton-Homes-2023-Update-Slider-Pics-DJI-77.webp',
+                '/images/hero/Indoor_Outdoor-3A4A2783-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -630,8 +630,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-5X7A2605-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-5X7A2586-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Indoor_Outdoor-5X7A2605-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Indoor_Outdoor-5X7A2586-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -657,8 +657,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-5X7A2605-Edit-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Indoor_Outdoor-5X7A2522-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Indoor_Outdoor-5X7A2605-Edit-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Indoor_Outdoor-5X7A2522-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -687,7 +687,7 @@ export default function SignatureDesign() {
               width: '100vw',
               paddingTop: '200px',
               paddingBottom: '50px',
-              backgroundImage: 'url(https://braxtonhomesaz.com/wp-content/uploads/2023/11/SECTION-HEADER-IMAGE-POOLS.webp)',
+              backgroundImage: 'url(/images/section-headers/SECTION-HEADER-IMAGE-POOLS.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
@@ -720,8 +720,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Backyard_Pool-2717-Braxton-Homes-2023-Update-Slider-Pics.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Backyard_Pool-2-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Backyard_Pool-2717-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Backyard_Pool-2-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -747,8 +747,8 @@ export default function SignatureDesign() {
           <div className="w-full max-w-full mx-auto px-6 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Pools-Braxton-Homes-2023-Update-Slider-Pics-DJI-74.webp',
-                'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/11/Backyard_Pool-2717-Braxton-Homes-2023-Update-Slider-Pics.webp',
+                '/images/hero/Pools-Braxton-Homes-2023-Update-Slider-Pics-DJI-74.webp',
+                '/images/hero/Backyard_Pool-2717-Braxton-Homes-2023-Update-Slider-Pics.webp',
               ].map((src, idx) => (
                 <div 
                   key={idx} 
@@ -772,7 +772,7 @@ export default function SignatureDesign() {
         {/* Bottom CTA Section */}
         <section className="relative py-[100px] px-0 overflow-hidden" style={{
           backgroundColor: 'rgba(0,47,108,0.73)',
-          backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/Bottom-of-Home-Page-contact-page3.jpg)',
+          backgroundImage: 'url(/images/hero/Bottom-of-Home-Page-contact-page3.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'left top',
           backgroundBlendMode: 'overlay',
@@ -784,7 +784,7 @@ export default function SignatureDesign() {
             <div className="mb-8">
               <div className="max-w-[1200px] mx-auto">
                 <Image
-                  src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON-WHITE-GOLD.png"
+                  src="/images/logo/BRAXTON-WHITE-GOLD.png"
                   alt="Braxton Builders"
                   width={1200}
                   height={344}

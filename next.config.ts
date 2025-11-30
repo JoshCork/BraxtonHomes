@@ -1,22 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i0.wp.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'braxtonhomesaz.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'braxton.gosparksites.com',
-      },
-    ],
-  },
+  // All images are now hosted locally in public/images/
+  // No remote image patterns needed
 };
 
 export default nextConfig;

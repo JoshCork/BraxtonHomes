@@ -10,22 +10,22 @@ export default function OurWork() {
     {
       id: 'pinnacle-canyon',
       name: 'Pinnacle Canyon',
-      image: 'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/07/Home-Braxton-Homes-2023-Update-Slider-DJI-0005.jpg?resize=1170%2C761&ssl=1',
+      image: '/images/hero/Home-Braxton-Homes-2023-Update-Slider-DJI-0005.jpg',
       href: '/portfolio-items/pinnacle-canyon',
       hasGallery: false,
     },
     {
       id: 'sonoran-reserve',
       name: 'Sonoran Reserve',
-      image: 'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/08/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics.jpg?resize=1170%2C761&ssl=1',
+      image: '/images/hero/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics.jpg',
       href: '/portfolio-items/sonoran-reserve',
       hasGallery: true,
-      galleryImage: 'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2023/08/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics.jpg?fit=2000%2C1300&ssl=1',
+      galleryImage: '/images/hero/Braxton-Homes-Sonoran-Reserve-110-Home-2023-Update-Slider-Pics.jpg',
     },
     {
       id: 'talus',
       name: 'Talus',
-      image: 'https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-1.jpg?resize=1170%2C761&ssl=1',
+      image: '/images/hero/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Talus-1.jpg',
       href: '/portfolio-items/talus',
       hasGallery: false,
     },
@@ -42,7 +42,7 @@ export default function OurWork() {
           <div 
             className="absolute inset-0"
             style={{
-              backgroundImage: 'url(https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/36-pool-1366x880.jpg?fit=1366%2C880&ssl=1)',
+              backgroundImage: 'url(/images/design-details/36-pool-1366x880.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -200,7 +200,7 @@ export default function OurWork() {
         <section 
           className="relative py-[100px] px-0 overflow-hidden"
           style={{
-            backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/Bottom-of-Home-Page-contact-page3.jpg)',
+            backgroundImage: 'url(/images/hero/Bottom-of-Home-Page-contact-page3.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'left top',
             backgroundColor: 'rgba(0,47,108,0.73)',
@@ -213,7 +213,7 @@ export default function OurWork() {
             {/* Logo */}
             <div className="mb-8">
               <Image
-                src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON-WHITE-GOLD.png?fit=3327%2C954&ssl=1"
+                src="/images/logo/BRAXTON-WHITE-GOLD.png"
                 alt="Braxton Builders"
                 width={1200}
                 height={344}

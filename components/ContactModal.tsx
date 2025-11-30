@@ -111,7 +111,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
         {/* Logo */}
         <div className="text-center mb-8">
           <Image
-            src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON.png?fit=3327%2C954&ssl=1"
+            src="/images/logo/BRAXTON.png"
             alt="Braxton Custom Homes"
             width={400}
             height={115}

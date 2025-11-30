@@ -17,7 +17,7 @@ export default function Testimonial() {
         <div 
           className="absolute inset-0"
           style={{
-            backgroundImage: 'url(https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Home-7.jpg?fit=2048%2C1534&ssl=1)',
+            backgroundImage: 'url(/images/hero/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Home-7.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -87,7 +87,7 @@ export default function Testimonial() {
           <div className="text-center mb-8">
             <div className="inline-block" style={{ borderRadius: '5px', boxShadow: '0 0 3px rgba(0,0,0,0.3)' }}>
               <Image
-                src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/09/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Testimonial.jpg?fit=2016%2C1512&ssl=1"
+                src="/images/hero/Luxury-Custom-Home-Builder-Scottsdale-Arizona-Braxton-Homes-Testimonial.jpg"
                 alt="Luxury Custom Home Builder Scottsdale Arizona Braxton Homes - Testimonial"
                 width={1200}
                 height={900}
@@ -115,7 +115,7 @@ export default function Testimonial() {
         className="relative py-[100px] px-0 overflow-hidden"
         style={{
           backgroundColor: 'rgba(0,47,108,0.73)',
-          backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/Bottom-of-Home-Page-contact-page3.jpg)',
+          backgroundImage: 'url(/images/hero/Bottom-of-Home-Page-contact-page3.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'left top',
           backgroundRepeat: 'no-repeat',
@@ -128,7 +128,7 @@ export default function Testimonial() {
           {/* Logo */}
           <div className="mb-8">
             <Image
-              src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON-WHITE-GOLD.png?fit=3327%2C954&ssl=1"
+              src="/images/logo/BRAXTON-WHITE-GOLD.png"
               alt="Braxton Builders"
               width={1200}
               height={344}

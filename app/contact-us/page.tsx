@@ -58,7 +58,7 @@ export default function ContactUs() {
             <div className="w-full md:w-[48%] md:mr-[4%] bg-white">
               <div className="text-center mb-10">
                 <Image
-                  src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON.png?fit=3327%2C954&ssl=1"
+                  src="/images/logo/BRAXTON.png"
                   alt="Braxton Custom Homes"
                   width={600}
                   height={172}
@@ -181,7 +181,7 @@ export default function ContactUs() {
         style={{
           paddingTop: '100px',
           paddingBottom: '100px',
-          backgroundImage: 'url(https://braxton.gosparksites.com/wp-content/uploads/2018/08/Bottom-of-Home-Page-contact-page3.jpg)',
+          backgroundImage: 'url(/images/hero/Bottom-of-Home-Page-contact-page3.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'left top',
           backgroundRepeat: 'no-repeat',
@@ -192,7 +192,7 @@ export default function ContactUs() {
         <div className="max-w-full mx-auto px-4 md:px-8">
           <div className="text-center mb-6">
             <Image
-              src="https://i0.wp.com/braxtonhomesaz.com/wp-content/uploads/2018/08/BRAXTON-WHITE-GOLD.png?fit=3327%2C954&ssl=1"
+              src="/images/logo/BRAXTON-WHITE-GOLD.png"
               alt="Braxton Custom Homes"
               width={600}
               height={172}
