@@ -64,24 +64,27 @@ export default function Navigation() {
       <ul className="space-y-0">
         {navItems.map((item, index) => (
           <li key={item.href}>
-            {/* Separator line between menu items */}
+            {/* Separator line between menu items - spans full width */}
             {index > 0 && (
-              <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+              <div className="border-t border-gray-200"></div>
             )}
             {item.children ? (
               <div className="space-y-1">
                 <div className="flex items-center">
                   <Link
                     href={item.href}
-                    className={`flex-1 block px-4 py-2 text-gray-700 hover:bg-[#E8A825]/20 rounded relative ${
+                    className={`flex-1 block py-2 text-gray-700 hover:bg-[#f5f0e8] relative ${
                       item.children.some(child => isActive(child.href))
-                        ? 'bg-[#E8A825]/20 font-semibold'
+                        ? 'bg-[#f5f0e8] font-semibold'
                         : ''
                     }`}
-                    style={{ fontSize: '14px', lineHeight: '1.5' }}
+                    style={{ 
+                      fontSize: '14px', 
+                      lineHeight: '1.5'
+                    }}
                     aria-haspopup="true"
                   >
-                    <span className="menu-text">{item.label}</span>
+                    <span className="menu-text" style={{ paddingLeft: '58px', paddingRight: '58px', display: 'block' }}>{item.label}</span>
                     {item.children.some(child => isActive(child.href)) && (
                       <span className="absolute right-0 top-0 bottom-0 w-1" style={{ backgroundColor: '#4A6895' }}></span>
                     )}
@@ -104,16 +107,19 @@ export default function Navigation() {
                       <li key={child.href}>
                         {/* Separator line between submenu items */}
                         {childIndex > 0 && (
-                          <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+                          <div className="border-t border-gray-200" style={{ marginLeft: '-16px' }}></div>
                         )}
                         <Link
                           href={child.href}
-                          className={`block px-4 py-2 text-gray-600 hover:bg-[#E8A825]/20 rounded relative ${
-                            isActive(child.href) ? 'bg-[#E8A825]/20 font-semibold' : ''
+                          className={`block py-2 text-gray-600 hover:bg-[#f5f0e8] relative ${
+                            isActive(child.href) ? 'bg-[#f5f0e8] font-semibold' : ''
                           }`}
-                          style={{ fontSize: '13px', lineHeight: '1.5' }}
+                          style={{ 
+                            fontSize: '13px', 
+                            lineHeight: '1.5'
+                          }}
                         >
-                          <span>{child.label}</span>
+                          <span style={{ paddingLeft: '58px', paddingRight: '58px', display: 'block' }}>{child.label}</span>
                           {isActive(child.href) && (
                             <span className="absolute right-0 top-0 bottom-0 w-1" style={{ backgroundColor: '#4A6895' }}></span>
                           )}
@@ -126,13 +132,16 @@ export default function Navigation() {
             ) : (
               <Link
                 href={item.href}
-                className={`block px-4 py-2 text-gray-700 hover:bg-[#E8A825]/20 rounded relative ${
-                  isActive(item.href) ? 'bg-[#E8A825]/20 font-semibold' : ''
+                className={`block py-2 text-gray-700 hover:bg-[#f5f0e8] relative ${
+                  isActive(item.href) ? 'bg-[#f5f0e8] font-semibold' : ''
                 }`}
-                style={{ fontSize: '14px', lineHeight: '1.5' }}
+                style={{ 
+                  fontSize: '14px', 
+                  lineHeight: '1.5'
+                }}
                 aria-current={isActive(item.href) ? 'page' : undefined}
               >
-                <span className="menu-text">{item.label}</span>
+                <span className="menu-text" style={{ paddingLeft: '58px', paddingRight: '58px', display: 'block' }}>{item.label}</span>
                 {isActive(item.href) && (
                   <span className="absolute right-0 top-0 bottom-0 w-1" style={{ backgroundColor: '#4A6895' }}></span>
                 )}
@@ -142,19 +151,25 @@ export default function Navigation() {
         ))}
       </ul>
       
-      {/* Separator line above contact info */}
-      <div className="border-t border-gray-200 my-1" style={{ marginLeft: '16px', marginRight: '16px' }}></div>
+      {/* Separator line above contact info - spans full width */}
+      <div className="border-t border-gray-200"></div>
 
-      {/* Contact Info - Right below Contact Us, aligned with menu items */}
-      <div className="space-y-2" style={{ fontSize: '13px', lineHeight: '1.5', paddingLeft: '16px', paddingRight: '16px', paddingTop: '8px' }}>
-        <p className="text-gray-700" style={{ color: '#4A6895' }}>602.363.0048</p>
-        <Link 
-          href="mailto:crcork@braxtonhomesaz.com" 
-          className="hover:opacity-80 block"
-          style={{ color: '#4A6895' }}
-        >
-          crcork@braxtonhomesaz.com
-        </Link>
+      {/* Contact Info - Right below Contact Us, with more padding above */}
+      <div className="space-y-2" style={{ 
+        fontSize: '13px', 
+        lineHeight: '1.5', 
+        paddingTop: '16px' 
+      }}>
+        <div style={{ paddingLeft: '58px', paddingRight: '58px' }}>
+          <p className="text-gray-700" style={{ color: '#4A6895' }}>602.363.0048</p>
+          <Link 
+            href="mailto:crcork@braxtonhomesaz.com" 
+            className="hover:opacity-80 block"
+            style={{ color: '#4A6895' }}
+          >
+            crcork@braxtonhomesaz.com
+          </Link>
+        </div>
       </div>
     </nav>
   );

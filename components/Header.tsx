@@ -6,11 +6,11 @@ export default function Header() {
   return (
     <aside 
       className="fixed left-0 top-0 h-full bg-white shadow-md z-50 hidden md:block"
-      style={{ width: '225px', boxSizing: 'border-box' }}
+      style={{ width: '260px', boxSizing: 'border-box' }}
     >
-      <div className="flex flex-col h-full" style={{ padding: '0 20px' }}>
+      <div className="flex flex-col h-full">
         {/* Logo */}
-        <div style={{ marginTop: '40px', marginBottom: '40px' }}>
+        <div style={{ marginTop: '40px', marginBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
           <Link href="/" className="block">
             <Image
               src="/images/logo/braxton-logo-sm.png"

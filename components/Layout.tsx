@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="min-h-screen flex">
         <Header />
         <MobileMenu />
-        <main className="flex-1 md:ml-[225px] w-full" style={{ minWidth: 0 }}>
+        <main className="flex-1 md:ml-[260px] w-full" style={{ minWidth: 0 }}>
           {children}
           <Footer />
         </main>
