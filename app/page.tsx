@@ -108,7 +108,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -116,7 +116,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Pinnacle Canyon
@@ -145,7 +146,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -153,7 +154,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Sonoran Reserve
@@ -162,14 +164,14 @@ export default function Home() {
               </div>
             </Link>
             
-            {/* Talus - wraps to second row */}
+            {/* Talus - spans full width on second row */}
             <Link
               href="/portfolio-items/talus"
               className="absolute group"
               style={{
                 left: '0px',
                 top: '355px',
-                width: '50%',
+                width: '100%',
                 height: '355px',
               }}
             >
@@ -182,7 +184,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -190,7 +192,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Talus
@@ -228,7 +231,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -236,7 +239,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Pinnacle Canyon
@@ -265,7 +269,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -273,7 +277,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Sonoran Reserve
@@ -302,7 +307,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all flex items-center justify-center">
                   <h4 
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold"
+                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-bold text-center"
                     style={{
                       fontSize: '48px',
                       color: 'white',
@@ -310,7 +315,8 @@ export default function Home() {
                       textShadow: '3px 3px 10px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.6)',
                       letterSpacing: '2px',
                       lineHeight: '1.2',
-                      margin: '0'
+                      margin: '0',
+                      textAlign: 'center'
                     }}
                   >
                     Talus
@@ -322,7 +328,7 @@ export default function Home() {
         </section>
 
         {/* Row 4: Separators */}
-        <section className="py-0 px-0 -mt-[43px] -mb-[40px]">
+        <section className="hidden md:block py-0 px-0 -mt-[43px] -mb-[40px]">
           <div className="max-w-full">
             <div className="border-t border-gray-300"></div>
             <div className="border-t border-gray-300"></div>
@@ -330,7 +336,7 @@ export default function Home() {
         </section>
 
         {/* Row 5: Some Words From Our Clients Heading */}
-        <section className="py-[27px] px-0" style={{
+        <section className="hidden md:block py-[27px] px-0" style={{
           backgroundColor: 'rgba(255,255,255,0.73)',
           backgroundImage: 'url(/images/backgrounds/bkgd-lines.jpg)',
           backgroundSize: 'cover'
@@ -343,7 +349,7 @@ export default function Home() {
         </section>
 
         {/* Row 6: Testimonial Section */}
-        <section className="py-[85px] px-0" style={{
+        <section className="py-[40px] md:py-[85px] px-0" style={{
           backgroundImage: 'url(/images/backgrounds/blur-blue.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'left top'
