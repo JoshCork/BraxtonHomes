@@ -470,7 +470,7 @@ export default function Home() {
             <div className="mb-8">
               <div className="max-w-[1200px] mx-auto">
                 <Image
-                  src="/images/logo/braxton-white-gold.png"
+                  src="/images/logo/BRAXTON-WHITE-GOLD.png"
                   alt="Braxton Builders"
                   width={1200}
                   height={344}
