@@ -132,7 +132,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div>
               <p className="text-gray-700">
                 <strong>Address:</strong><br />
-                10232 E. Cindercone Trail<br />
+                10789 E. Troon North Dr.<br />
                 Scottsdale, AZ 85262
               </p>
             </div>

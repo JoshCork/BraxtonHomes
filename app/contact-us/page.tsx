@@ -78,7 +78,7 @@ export default function ContactUs() {
               <div className="text-center space-y-4 text-gray-700">
                 <p className="leading-relaxed">Fill out the form and our team will be in touch with you promptly. Thank you for your interest!</p>
                 <p className="leading-relaxed">
-                  <strong>Main Office:</strong> 10821 E. Troon North Dr. Scottsdale, AZ 85262<br />
+                  <strong>Main Office:</strong> 10789 E. Troon North Dr. Scottsdale, AZ 85262<br />
                   <strong>Phone:</strong> 602.363.0048<br />
                   <strong>Email:</strong> crcork@braxtonhomesaz.com
                 </p>
